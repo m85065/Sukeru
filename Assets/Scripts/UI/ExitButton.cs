@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +19,13 @@ public class ExitButton : MonoBehaviour
     {
         
     }
-    
+
+    private void OnDisable()
+    {
+        _exitButton.onClick.RemoveListener(gameExit);
+        Destroy(gameObject);
+    }
+
     public void gameExit()
     {
         Application.Quit();

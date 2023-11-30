@@ -3,18 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Launcher
+  - Structure
+  - Obstacle
+  - Reflector
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Structure
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Obstacle
+  - Reflector
+  - Bullet
+  - Enemy
   - 
   - 
   - 
